@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About Me"
-date: false
+date: 
 comments: true
 sharing: true
 footer: true
