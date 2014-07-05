@@ -29,7 +29,7 @@ Before today I've written multiple times for a pagination in front end, thought 
 
 ```
 
-  class VcoolineIkcrm.Collections.PaginatedCollection extends Backbone.Collection
+  class App.Collections.PaginatedCollection extends Backbone.Collection
 
     parse: (resp)->
       @page = resp.current_page
@@ -47,7 +47,7 @@ Before today I've written multiple times for a pagination in front end, thought 
 
 ``` coffeescript
 
-  class VcoolineIkcrm.Views.Shared.PaginationView extends Backbone.View
+  class App.Views.Shared.PaginationView extends Backbone.View
 
     template: JST["backbone/templates/shared/pagination"]
 
