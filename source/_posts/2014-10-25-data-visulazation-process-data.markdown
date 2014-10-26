@@ -46,3 +46,68 @@ You'll see data like:
 
 ## To understand the data columns, you can check [http://data.police.uk/about/](http://data.police.uk/about/)
 
+## Query crimes stats
+
+    db.crimes.group({key: { 'Crime type': 1}, reduce: function(curr, result){ result.total += 1}, initial: { total: 0 } })
+
+result:
+
+    [
+	{
+		"Crime type" : "Anti-social behaviour",
+		"total" : 5593
+	},
+	{
+		"Crime type" : "Burglary",
+		"total" : 888
+	},
+	{
+		"Crime type" : "Criminal damage and arson",
+		"total" : 1215
+	},
+	{
+		"Crime type" : "Other theft",
+		"total" : 1343
+	},
+	{
+		"Crime type" : "Violence and sexual offences",
+		"total" : 2123
+	},
+	{
+		"Crime type" : "Drugs",
+		"total" : 292
+	},
+	{
+		"Crime type" : "Public order",
+		"total" : 577
+	},
+	{
+		"Crime type" : "Shoplifting",
+		"total" : 1019
+	},
+	{
+		"Crime type" : "Vehicle crime",
+		"total" : 689
+	},
+	{
+		"Crime type" : "Possession of weapons",
+		"total" : 22
+	},
+	{
+		"Crime type" : "Bicycle theft",
+		"total" : 271
+	},
+	{
+		"Crime type" : "Other crime",
+		"total" : 88
+	},
+	{
+		"Crime type" : "Theft from the person",
+		"total" : 172
+	},
+	{
+		"Crime type" : "Robbery",
+		"total" : 91
+	}
+    ]
+
