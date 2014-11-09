@@ -10,6 +10,7 @@ Refinement is introduced in ruby 2.0, no longer a experiment feature in ruby 2.1
 
 For example, suppose we define a refinement:
   
+``` ruby
     module ACoolFeature
       refine(String) do
         def is_it_cool?
@@ -17,9 +18,11 @@ For example, suppose we define a refinement:
         end
       end
     end
+```
 
 Here we define a refinement to String class, to use the refinement we need to call *using* inside a class.
 
+``` ruby
     class Person
       using(ACoolFeature)
       
@@ -27,11 +30,14 @@ Here we define a refinement to String class, to use the refinement we need to ca
         "test".is_it_cool?
       end
     end
+```
 
 After call using in Person class, the method is_it_cool? is available for string inside this scope.
 
+``` ruby
     Person.new.hello
     >     Person.new.hello
     YES
+```
 
 That's it.
