@@ -101,6 +101,46 @@ Run grant command to build the project.
 
     grunt serve
 
+### 6. deploy the app
+
+
+after edit and create some awesome features, you definitely want to deploy the app, right? Here I'll show you how to deploy the app in [divshot.com](https://divshot.com) static web hosting for developers.
+
+First you need to register a account in [divshot.com](https://divshot.com), after register you need to install npm package for running divshot command
+
+    npm install -g divshot-cli
+
+Then use divshot command to login your account:
+
+    divshot login
+
+After that you can go to your project directory, run 'divshot init' command:
+
+    divshot init
+    name: (myapp) rociiu-ember-demo
+    root directory: (current) dist
+    clean urls: (y/n) y
+    error page: (error.html) n
+    Would you like to create a Divshot.io app from this app?: (y/n) y
+    Creating app ...
+
+After the steps, it will create a configuration file(divshot.json) inside the root directory. Then deploy the app with 'divshot push':
+
+    divshot push
+
+    Creating build ...  App does not yet exist. Creating app rociiu-ember-demo ... ✔
+    Hashing Directory Contents ... ✔
+
+    Syncing 15 files: [==================================================] 100%
+
+
+    Finalizing build ... ✔
+    Releasing build to development ... ✔
+
+    Application deployed to development
+    You can view your app at: http://development.rociiu-ember-demo.divshot.io
+
+Your app should be live now.
 
 * * *
 
