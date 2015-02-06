@@ -15,4 +15,6 @@ Here I want to import crimes data ([http://data.police.uk](http://data.police.uk
     ActiveRecord::Base.connection.execute(sql) # run with active record connection
 
 You can find more document with the link above, here I list column names following the table name to match the columns in csv, also specify the csv delimiters and tell the command that there's header in csv.
+
+The full rake task for importing is here: [https://github.com/rociiu/uk-crimes/blob/master/lib/tasks/import.rake](https://github.com/rociiu/uk-crimes/blob/master/lib/tasks/import.rake).
     
