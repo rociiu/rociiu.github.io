@@ -1,113 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Roc's blog</title>
-  <meta name="author" content="Roc Yu">
-
-  
-  <meta name="description" content="Bitcoin or blockchain is crazy hot on internet today, and I&rsquo;m curious what&rsquo;s the best way for a programmer to get start with it. After &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[Roc's blog]]></title>
+  <link href="http://rociiu.com/atom.xml" rel="self"/>
+  <link href="http://rociiu.com/"/>
+  <updated>2018-03-04T18:39:21+08:00</updated>
+  <id>http://rociiu.com/</id>
+  <author>
+    <name><![CDATA[Roc Yu]]></name>
+    <email><![CDATA[rociiu.yu@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <link rel="canonical" href="http://rociiu.com">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Roc's blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-7581425-4']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Roc's blog</a></h1>
-  
-    <h2>About web development</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:rociiu.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About Me</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2018/03/04/setup-bitcoin-development-environment/">Setup Bitcoin Development Environment</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2018-03-04T18:16:09+08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2018</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Bitcoin or blockchain is crazy hot on internet today, and I&rsquo;m curious what&rsquo;s the best way for a programmer to get start with it. After read some books, I found that you can setup a test bitcoin testnet and play with it, so in this post I will share how it works.</p>
+  <entry>
+    <title type="html"><![CDATA[Setup Bitcoin Development Environment]]></title>
+    <link href="http://rociiu.com/blog/2018/03/04/setup-bitcoin-development-environment/"/>
+    <updated>2018-03-04T18:16:09+08:00</updated>
+    <id>http://rociiu.com/blog/2018/03/04/setup-bitcoin-development-environment</id>
+    <content type="html"><![CDATA[<p>Bitcoin or blockchain is crazy hot on internet today, and I&rsquo;m curious what&rsquo;s the best way for a programmer to get start with it. After read some books, I found that you can setup a test bitcoin testnet and play with it, so in this post I will share how it works.</p>
 
 <h3>Get a ubuntu server</h3>
 
@@ -298,42 +209,15 @@
 <li><a href="https://en.bitcoin.it/wiki/API_reference_(JSON-RPC">https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)</a>)</li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/02/06/import-csv-into-postgres-with-copy-command/">Import Csv Into Postgres With Copy Command</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-02-06T11:30:35+08:00" pubdate data-updated="true">Feb 6<span>th</span>, 2015</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When deal with data related project, if often need to import data from csv or excel, you can write loop to import with active record model one by one or by transaction, you can also use database command to do the bulk import, in mongodb there&rsquo;s <a href="http://docs.mongodb.org/v2.2/reference/mongoimport/">mongoimport</a>, for postgresql you can use <a href="http://www.postgresql.org/docs/9.2/static/sql-copy.html">copy</a>.</p>
+  <entry>
+    <title type="html"><![CDATA[Import Csv Into Postgres With Copy Command]]></title>
+    <link href="http://rociiu.com/blog/2015/02/06/import-csv-into-postgres-with-copy-command/"/>
+    <updated>2015-02-06T11:30:35+08:00</updated>
+    <id>http://rociiu.com/blog/2015/02/06/import-csv-into-postgres-with-copy-command</id>
+    <content type="html"><![CDATA[<p>When deal with data related project, if often need to import data from csv or excel, you can write loop to import with active record model one by one or by transaction, you can also use database command to do the bulk import, in mongodb there&rsquo;s <a href="http://docs.mongodb.org/v2.2/reference/mongoimport/">mongoimport</a>, for postgresql you can use <a href="http://www.postgresql.org/docs/9.2/static/sql-copy.html">copy</a>.</p>
 
 <p>Here I want to import crimes data (<a href="http://data.police.uk">http://data.police.uk</a>) into postgresql, I wrote follow sql command to import:</p>
 
@@ -345,42 +229,15 @@ ActiveRecord::Base.connection.execute(sql) # run with active record connection
 <p>You can find more document with the link above, here I list column names following the table name to match the columns in csv, also specify the csv delimiters and tell the command that there&rsquo;s header in csv.</p>
 
 <p>The full rake task for importing is here: <a href="https://github.com/rociiu/uk-crimes/blob/master/lib/tasks/import.rake">https://github.com/rociiu/uk-crimes/blob/master/lib/tasks/import.rake</a>.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/01/12/create-ember-app-with-yeoman/">Create Ember App With Yeoman</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-01-12T08:28:29+08:00" pubdate data-updated="true">Jan 12<span>th</span>, 2015</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>1. install dependencies</h3>
+  <entry>
+    <title type="html"><![CDATA[Create Ember App With Yeoman]]></title>
+    <link href="http://rociiu.com/blog/2015/01/12/create-ember-app-with-yeoman/"/>
+    <updated>2015-01-12T08:28:29+08:00</updated>
+    <id>http://rociiu.com/blog/2015/01/12/create-ember-app-with-yeoman</id>
+    <content type="html"><![CDATA[<h3>1. install dependencies</h3>
 
 <p>Download and install from <a href="http://nodejs.org">nodejs</a>, it include NPM for node package manage</p>
 
@@ -543,42 +400,15 @@ You can view your app at: http://development.rociiu-ember-demo.divshot.io
 <li><a href="http://bower.io">http://bower.io</a></li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/09/ruby-refinement-note/">Ruby Refinement Note</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-11-09T12:46:11+08:00" pubdate data-updated="true">Nov 9<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Refinement is introduced in ruby 2.0, no longer a experiment feature in ruby 2.1, but still not very stable. The idea of refinement is to limit the monkeying patch scope.</p>
+  <entry>
+    <title type="html"><![CDATA[Ruby Refinement Note]]></title>
+    <link href="http://rociiu.com/blog/2014/11/09/ruby-refinement-note/"/>
+    <updated>2014-11-09T12:46:11+08:00</updated>
+    <id>http://rociiu.com/blog/2014/11/09/ruby-refinement-note</id>
+    <content type="html"><![CDATA[<p>Refinement is introduced in ruby 2.0, no longer a experiment feature in ruby 2.1, but still not very stable. The idea of refinement is to limit the monkeying patch scope.</p>
 
 <p>For example, suppose we define a refinement:</p>
 
@@ -630,42 +460,15 @@ You can view your app at: http://development.rociiu-ember-demo.divshot.io
 
 
 <p>That&rsquo;s it.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/01/visualize-data-with-d3/">Visualize Data With D3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-11-01T22:00:10+08:00" pubdate data-updated="true">Nov 1<span>st</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>what is d3js</h2>
+  <entry>
+    <title type="html"><![CDATA[Visualize Data With D3]]></title>
+    <link href="http://rociiu.com/blog/2014/11/01/visualize-data-with-d3/"/>
+    <updated>2014-11-01T22:00:10+08:00</updated>
+    <id>http://rociiu.com/blog/2014/11/01/visualize-data-with-d3</id>
+    <content type="html"><![CDATA[<h2>what is d3js</h2>
 
 <p>(<a href="http://d3js.org">http://d3js.org</a>)[d3js] is very popular in visualization recently, it has unique way to render chart compare to other libraries. d3 refer to data-driven document.</p>
 
@@ -802,42 +605,15 @@ You can view your app at: http://development.rociiu-ember-demo.divshot.io
 <p>Noted that we still missing a lot of stuff in this chart like x/y axis, labels though, d3js offer functions/generators for that.</p>
 
 <p>If you understand how svg works, you&rsquo;ll know that d3js just help us to render svg elements with helper functions.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/25/data-visulazation-process-data/">Data Visulazation - Import Data</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-25T19:14:05+08:00" pubdate data-updated="true">Oct 25<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have been worked on some data visualization projects in last few years for different kind of clients, used some different set of library/framework like backbonejs, raphaeljs, d3js.
+  <entry>
+    <title type="html"><![CDATA[Data Visulazation - Import Data]]></title>
+    <link href="http://rociiu.com/blog/2014/10/25/data-visulazation-process-data/"/>
+    <updated>2014-10-25T19:14:05+08:00</updated>
+    <id>http://rociiu.com/blog/2014/10/25/data-visulazation-process-data</id>
+    <content type="html"><![CDATA[<p>I have been worked on some data visualization projects in last few years for different kind of clients, used some different set of library/framework like backbonejs, raphaeljs, d3js.
 Start from this post, i&rsquo;ll try to write down process on how we can do data visualization with modern technologies.</p>
 
 <p>The data source will be <a href="http://data.police.uk">http://data.police.uk</a> , which include different crimes records in UK.</p>
@@ -949,42 +725,15 @@ db.crimes.find()
 }
 ]
 </code></pre>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/19/issues-of-upgrading-to-yosemite/">Issues of Upgrading to Yosemite Related to Homebrew</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-10-19T14:59:58+08:00" pubdate data-updated="true">Oct 19<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Fix brew command</h2>
+  <entry>
+    <title type="html"><![CDATA[Issues of Upgrading to Yosemite Related to Homebrew]]></title>
+    <link href="http://rociiu.com/blog/2014/10/19/issues-of-upgrading-to-yosemite/"/>
+    <updated>2014-10-19T14:59:58+08:00</updated>
+    <id>http://rociiu.com/blog/2014/10/19/issues-of-upgrading-to-yosemite</id>
+    <content type="html"><![CDATA[<h2>Fix brew command</h2>
 
 <p>In Yosemite the ruby command path changed, yosemite use ruby 2.0 as default also create a new path to link to ruby 2.0:</p>
 
@@ -1020,42 +769,15 @@ mkdir /usr/local/var/postgres/pg_stat_tmp
 
 <p>  <a href="http://stackoverflow.com/questions/25970132/pg-tblspc-missing-after-installation-of-os-x-yosemite-beta/26001639#26001639">http://stackoverflow.com/questions/25970132/pg-tblspc-missing-after-installation-of-os-x-yosemite-beta/26001639#26001639</a>
   <a href="https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/">https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/13/client-form-validation-in-angularjs/">Client Form Validation in Angularjs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-08-13T09:33:35+08:00" pubdate data-updated="true">Aug 13<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>angularjs has built-in helper to validate form in client side, here is how you can use it.</p>
+  <entry>
+    <title type="html"><![CDATA[Client Form Validation in Angularjs]]></title>
+    <link href="http://rociiu.com/blog/2014/08/13/client-form-validation-in-angularjs/"/>
+    <updated>2014-08-13T09:33:35+08:00</updated>
+    <id>http://rociiu.com/blog/2014/08/13/client-form-validation-in-angularjs</id>
+    <content type="html"><![CDATA[<p>angularjs has built-in helper to validate form in client side, here is how you can use it.</p>
 
 <p>Your html:</p>
 
@@ -1129,42 +851,15 @@ mkdir /usr/local/var/postgres/pg_stat_tmp
 
 <p><a href="http://www.ng-newsletter.com/posts/validations.html">http://www.ng-newsletter.com/posts/validations.html</a>
 <a href="http://scotch.io/tutorials/javascript/angularjs-form-validation">http://scotch.io/tutorials/javascript/angularjs-form-validation</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/12/log-login-activity-in-devise/">Log Login Activity in Devise</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-12T09:22:32+08:00" pubdate data-updated="true">Jul 12<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In devise, there&rsquo;s option Trackable to record sign in count and ip, but in some case there&rsquo;s need to save custom logs in database. Turns out you can use Devise hook for that.</p>
+  <entry>
+    <title type="html"><![CDATA[Log Login Activity in Devise]]></title>
+    <link href="http://rociiu.com/blog/2014/07/12/log-login-activity-in-devise/"/>
+    <updated>2014-07-12T09:22:32+08:00</updated>
+    <id>http://rociiu.com/blog/2014/07/12/log-login-activity-in-devise</id>
+    <content type="html"><![CDATA[<p>In devise, there&rsquo;s option Trackable to record sign in count and ip, but in some case there&rsquo;s need to save custom logs in database. Turns out you can use Devise hook for that.</p>
 
 <p>Just need to put this under config/initializer/devise.rb.</p>
 
@@ -1184,42 +879,15 @@ mkdir /usr/local/var/postgres/pg_stat_tmp
 </span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/05/implement-pagination-in-backbone/">Implement Pagination in Backbone</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-05T17:44:39+08:00" pubdate data-updated="true">Jul 5<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Before today I&rsquo;ve written multiple times for a pagination in front end, thought it&rsquo;s good time to write down in blog for future implementation.</p>
+  <entry>
+    <title type="html"><![CDATA[Implement Pagination in Backbone]]></title>
+    <link href="http://rociiu.com/blog/2014/07/05/implement-pagination-in-backbone/"/>
+    <updated>2014-07-05T17:44:39+08:00</updated>
+    <id>http://rociiu.com/blog/2014/07/05/implement-pagination-in-backbone</id>
+    <content type="html"><![CDATA[<p>Before today I&rsquo;ve written multiple times for a pagination in front end, thought it&rsquo;s good time to write down in blog for future implementation.</p>
 
 <h2>1. Include pagination in your api for backbone collection</h2>
 
@@ -1478,128 +1146,186 @@ mkdir /usr/local/var/postgres/pg_stat_tmp
 </span><span class='line'>  <span class="o">&lt;/</span><span class="nx">div</span><span class="o">&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Organize Angularjs Files Ftw]]></title>
+    <link href="http://rociiu.com/blog/2014/06/14/organize-angularjs-files-ftw/"/>
+    <updated>2014-06-14T19:47:50+08:00</updated>
+    <id>http://rociiu.com/blog/2014/06/14/organize-angularjs-files-ftw</id>
+    <content type="html"><![CDATA[<p>In a recent project I just started to use angularjs to develop complicated front UI, this project is not a SPA, we only use angularjs in places that ui elements is so complicated that is easier to do with front end. Since new on angularjs, i searched on the internet for best practices that organize large codebase and module naming, found couple ways.</p>
+
+<h3>1. Put everything in one file for simplest case.</h3>
+
+<figure class='code'><figcaption><span>app.js.coffee everything in one file</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>
+</span><span class='line'>  <span class="nx">angularjs</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s">&#39;myApp&#39;</span><span class="p">,</span> <span class="p">[])</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s">&#39;MyCtrl&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;$scope&#39;</span><span class="p">,</span> <span class="nf">($scope)-&gt;</span>
+</span><span class='line'>      <span class="nv">$scope.hello = </span><span class="s">&quot;world&quot;</span>
+</span><span class='line'>    <span class="p">])</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">constant</span><span class="p">(</span><span class="s">&#39;Contacts&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;Foo&#39;</span><span class="p">,</span> <span class="s">&#39;Bar&#39;</span><span class="p">])</span>
+</span><span class='line'>    <span class="p">...</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>2. Put different kind of stuff in different files</h3>
+
+<figure class='code'><figcaption><span>app.js.coffee define app namespace</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>
+</span><span class='line'>  <span class="nx">angularjs</span><span class="p">.</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s">&#39;myApp&#39;</span><span class="p">,</span> <span class="p">[])</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>controllers.js.coffee define controllers</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>
+</span><span class='line'>  <span class="nx">angularjs</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s">&#39;myApp&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s">&#39;OneCtrl&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;$scope&#39;</span><span class="p">,</span> <span class="nf">($scope)-&gt;</span>
+</span><span class='line'>      <span class="nv">$scope.hello = </span><span class="s">&#39;world&#39;</span>
+</span><span class='line'>    <span class="p">])</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s">&#39;TwoCtrl&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;$scope&#39;</span><span class="p">,</span> <span class="nf">($scope)-&gt;</span>
+</span><span class='line'>      <span class="nv">$scope.foo = </span><span class="s">&#39;bar&#39;</span>
+</span><span class='line'>    <span class="p">])</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>constants.js.coffee define constants</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>
+</span><span class='line'>  <span class="nx">angularjs</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s">&#39;myApp&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">.</span><span class="nx">constant</span><span class="p">(</span><span class="s">&#39;Contacts&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;Foo&#39;</span><span class="p">,</span> <span class="s">&#39;Bar&#39;</span><span class="p">])</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>3. Create directories to save different kind of files</h3>
+
+<figure class='code'><figcaption><span>constants.js.coffee define constants</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>  <span class="o">-</span> <span class="nx">app</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>  <span class="nx">controllers</span><span class="o">/</span>
+</span><span class='line'>    <span class="nx">OneCtrl</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>    <span class="nx">TwoCtrl</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>  <span class="nx">constants</span><span class="o">/</span>
+</span><span class='line'>    <span class="nx">Contants</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>    <span class="nx">Contacts</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>4. Create features directories to store everything for each features</h3>
+
+<figure class='code'><figcaption><span>constants.js.coffee define constants</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>  <span class="o">-</span> <span class="nx">app</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>  <span class="nx">Users</span>
+</span><span class='line'>    <span class="o">-</span> <span class="nx">UserCtrl</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>    <span class="o">-</span> <span class="nx">UserModel</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>  <span class="nx">Contacts</span>
+</span><span class='line'>    <span class="o">-</span> <span class="nx">ContactsCtrl</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>    <span class="o">-</span> <span class="nx">ContactModel</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>5. How do organize code for multiple angularjs apps</h3>
+
+<figure class='code'><figcaption><span>constants.js.coffee define constants</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>  <span class="o">-</span> <span class="nx">app</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>  <span class="o">-</span> <span class="nx">modules</span>
+</span><span class='line'>    <span class="nx">AppOne</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>    <span class="nx">AppTwo</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>  <span class="o">-</span> <span class="nx">controllers</span>
+</span><span class='line'>    <span class="nx">AppOne</span><span class="o">/</span>
+</span><span class='line'>      <span class="nx">OneCtrl</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>    <span class="nx">AppTwo</span><span class="o">/</span>
+</span><span class='line'>      <span class="nx">TwoCtrl</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>  <span class="o">-</span> <span class="nx">models</span>
+</span><span class='line'>    <span class="nx">AppOne</span><span class="o">/</span>
+</span><span class='line'>      <span class="nx">UserModel</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span><span class='line'>    <span class="nx">AppTwo</span><span class="o">/</span>
+</span><span class='line'>      <span class="nx">ContactModel</span><span class="p">.</span><span class="nx">js</span><span class="p">.</span><span class="nx">coffee</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In app.js.coffee, I define top level module to include basic dependencies share between apps.</p>
+
+<figure class='code'><figcaption><span>app.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>  <span class="nx">angularjs</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s">&#39;app&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;dep1&#39;</span><span class="p">,</span> <span class="s">&#39;dep2&#39;</span><span class="p">])</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In AppOne.js.coffe, it define a new module and load app as dependencies and the shared dependencies define in app will be available in AppOne.</p>
+
+<figure class='code'><figcaption><span>AppOne.js.coffee</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'>  <span class="nx">angularjs</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s">&#39;app.appOne&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;app&#39;</span><span class="p">])</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In html only need to specify AppOne in place that app one is need.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  <span class="nt">&lt;div</span> <span class="na">ng-app=</span><span class="s">&#39;app.appOne&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;OneCtrl&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Conculsion</h3>
+
+<p>I didn&rsquo;t choose solution 4 because it seems not good to put different stuff together even though it&rsquo;s easier to find files for changes. So I follow solution 3 and extend it for multiple apps.</p>
+]]></content>
+  </entry>
   
-
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2018/03/04/setup-bitcoin-development-environment/">Setup Bitcoin Development Environment</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/02/06/import-csv-into-postgres-with-copy-command/">Import Csv Into Postgres With Copy Command</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2015/01/12/create-ember-app-with-yeoman/">Create Ember App With Yeoman</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/11/09/ruby-refinement-note/">Ruby Refinement Note</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/11/01/visualize-data-with-d3/">Visualize Data With D3</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/rociiu">@rociiu</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'rociiu',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2018 - Roc Yu -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'rociiublog';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Data Visulazation - Import Data - Roc's blog</title>
+  <meta name="author" content="Roc Yu">
+
+  
+  <meta name="description" content="I have been worked on some data visualization projects in last few years for different kind of clients, used some different set of library/framework &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rociiu.com/blog/2014/10/25/data-visulazation-process-data">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Roc's blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7581425-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Roc's blog</a></h1>
+  
+    <h2>About web development</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rociiu.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Data Visulazation - Import Data</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-25T19:14:05+08:00" pubdate data-updated="true">Oct 25<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I have been worked on some data visualization projects in last few years for different kind of clients, used some different set of library/framework like backbonejs, raphaeljs, d3js.
+Start from this post, i&rsquo;ll try to write down process on how we can do data visualization with modern technologies.</p>
+
+<p>The data source will be <a href="http://data.police.uk">http://data.police.uk</a> , which include different crimes records in UK.</p>
+
+<h2>Install mongodb</h2>
+
+<p>Mongodb has many features like document, schemaless, query, etc, the reason i choose it is it&rsquo;s very easy to load the data into it using mongoimport.</p>
+
+<pre><code>brew install mongodb
+</code></pre>
+
+<h2>Start mongodb</h2>
+
+<pre><code>mongod
+</code></pre>
+
+<h2>Create database</h2>
+
+<pre><code>use ukcrimes
+</code></pre>
+
+<h2>Download data from <a href="http://data.police.uk/data/">http://data.police.uk/data/</a></h2>
+
+<h2>Import data into database</h2>
+
+<pre><code>mongoimport --db ukpolice --collection crimes --type csv --headerline --file file_path
+</code></pre>
+
+<h2>Check imported data</h2>
+
+<pre><code>mongo
+use ukcrimes
+db.crimes.find()  
+</code></pre>
+
+<p>You&rsquo;ll see data like:</p>
+
+<pre><code>{ "_id" : ObjectId("544a7172d0e2b18dc73d060c"), "Crime ID" : "ca8de697ca1a5b0b1f76a3c0f3f652bf2e9e20a31fbf5af40df5de7fa55f63a4", "Month" : "2014-07", "Reported by" : "Avon and Somerset Constabulary", "Falls within" : "Avon and Somerset Constabulary", "Longitude" : "", "Latitude" : "", "Location" : "No location", "LSOA code" : "", "LSOA name" : "", "Outcome type" : "Offender given penalty notice" }
+{ "_id" : ObjectId("544a7172d0e2b18dc73d060d"), "Crime ID" : "c50470f2a1af2a5fffaa3dd69218777200c1a9289b87dd36849325ed2585472e", "Month" : "2014-07", "Reported by" : "Avon and Somerset Constabulary", "Falls within" : "Avon and Somerset Constabulary", "Longitude" : "", "Latitude" : "", "Location" : "No location", "LSOA code" : "", "LSOA name" : "", "Outcome type" : "Offender given a drugs possession warning" }
+{ "_id" : ObjectId("544a7172d0e2b18dc73d060e"), "Crime ID" : "b7458f39eb58018af53c85fd481aa2028e247baa30ceb1f095437359e78b63f6", "Month" : "2014-07", "Reported by" : "Avon and Somerset Constabulary", "Falls within" : "Avon and Somerset Constabulary", "Longitude" : "", "Latitude" : "", "Location" : "No location", "LSOA code" : "", "LSOA name" : "", "Outcome type" : "Suspect charged" }
+{ "_id" : ObjectId("544a7172d0e2b18dc73d060f"), "Crime ID" : "3093f07675cd62ce39cc8eeb80261edb15d00cbee2bf2ece8d295ac6a0efab4e", "Month" : "2014-07", "Reported by" : "Avon and Somerset Constabulary", "Falls within" : "Avon and Somerset Constabulary", "Longitude" : "", "Latitude" : "", "Location" : "No location", "LSOA code" : "", "LSOA name" : "", "Outcome type" : "Suspect charged" }
+</code></pre>
+
+<h2>To understand the data columns, you can check <a href="http://data.police.uk/about/">http://data.police.uk/about/</a></h2>
+
+<h2>Query crimes stats</h2>
+
+<pre><code>db.crimes.group({key: { 'Crime type': 1}, reduce: function(curr, result){ result.total += 1}, initial: { total: 0 } })
+</code></pre>
+
+<p>result:</p>
+
+<pre><code>[
+{
+    "Crime type" : "Anti-social behaviour",
+    "total" : 5593
+},
+{
+    "Crime type" : "Burglary",
+    "total" : 888
+},
+{
+    "Crime type" : "Criminal damage and arson",
+    "total" : 1215
+},
+{
+    "Crime type" : "Other theft",
+    "total" : 1343
+},
+{
+    "Crime type" : "Violence and sexual offences",
+    "total" : 2123
+},
+{
+    "Crime type" : "Drugs",
+    "total" : 292
+},
+{
+    "Crime type" : "Public order",
+    "total" : 577
+},
+{
+    "Crime type" : "Shoplifting",
+    "total" : 1019
+},
+{
+    "Crime type" : "Vehicle crime",
+    "total" : 689
+},
+{
+    "Crime type" : "Possession of weapons",
+    "total" : 22
+},
+{
+    "Crime type" : "Bicycle theft",
+    "total" : 271
+},
+{
+    "Crime type" : "Other crime",
+    "total" : 88
+},
+{
+    "Crime type" : "Theft from the person",
+    "total" : 172
+},
+{
+    "Crime type" : "Robbery",
+    "total" : 91
+}
+]
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Roc Yu</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-25T19:14:05+08:00" pubdate data-updated="true">Oct 25<span>th</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rociiu.com/blog/2014/10/25/data-visulazation-process-data/" data-via="uiicor" data-counturl="http://rociiu.com/blog/2014/10/25/data-visulazation-process-data/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/19/issues-of-upgrading-to-yosemite/" title="Previous Post: Issues of upgrading to Yosemite related to homebrew">&laquo; Issues of upgrading to Yosemite related to homebrew</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/11/01/visualize-data-with-d3/" title="Next Post: visualize data with d3">visualize data with d3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/03/04/setup-bitcoin-development-environment/">Setup Bitcoin Development Environment</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/06/import-csv-into-postgres-with-copy-command/">Import Csv Into Postgres With Copy Command</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/01/12/create-ember-app-with-yeoman/">Create Ember App With Yeoman</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/09/ruby-refinement-note/">Ruby Refinement Note</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/01/visualize-data-with-d3/">Visualize Data With D3</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/rociiu">@rociiu</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'rociiu',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Roc Yu -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rociiublog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rociiu.com/blog/2014/10/25/data-visulazation-process-data/';
+        var disqus_url = 'http://rociiu.com/blog/2014/10/25/data-visulazation-process-data/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

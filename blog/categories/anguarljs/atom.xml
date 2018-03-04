@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Anguarljs | Roc's blog]]></title>
+  <link href="http://rociiu.com/blog/categories/anguarljs/atom.xml" rel="self"/>
+  <link href="http://rociiu.com/"/>
+  <updated>2018-03-04T18:39:21+08:00</updated>
+  <id>http://rociiu.com/</id>
+  <author>
+    <name><![CDATA[Roc Yu]]></name>
+    <email><![CDATA[rociiu.yu@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Organize Angularjs Files Ftw]]></title>
+    <link href="http://rociiu.com/blog/2014/06/14/organize-angularjs-files-ftw/"/>
+    <updated>2014-06-14T19:47:50+08:00</updated>
+    <id>http://rociiu.com/blog/2014/06/14/organize-angularjs-files-ftw</id>
+    <content type="html"><![CDATA[<p>In a recent project I just started to use angularjs to develop complicated front UI, this project is not a SPA, we only use angularjs in places that ui elements is so complicated that is easier to do with front end. Since new on angularjs, i searched on the internet for best practices that organize large codebase and module naming, found couple ways.</p>
+
+<h3>1. Put everything in one file for simplest case.</h3>
+
+<p>``` coffeescript app.js.coffee everything in one file</p>
+
+<p>  angularjs</p>
+
+<pre><code>.module('myApp', [])
+.controller('MyCtrl', ['$scope', ($scope)-&gt;
+  $scope.hello = "world"
+])
+.constant('Contacts', ['Foo', 'Bar'])
+...
+</code></pre>
+
+<p>```</p>
+
+<h3>2. Put different kind of stuff in different files</h3>
+
+<p>``` coffeescript app.js.coffee define app namespace</p>
+
+<p>  angularjs.</p>
+
+<pre><code>.module('myApp', [])
+</code></pre>
+
+<p>```</p>
+
+<p>``` coffeescript controllers.js.coffee define controllers</p>
+
+<p>  angularjs.module(&lsquo;myApp&rsquo;)</p>
+
+<pre><code>.controller('OneCtrl', ['$scope', ($scope)-&gt;
+  $scope.hello = 'world'
+])
+.controller('TwoCtrl', ['$scope', ($scope)-&gt;
+  $scope.foo = 'bar'
+])
+</code></pre>
+
+<p>```</p>
+
+<p>``` coffeescript constants.js.coffee define constants</p>
+
+<p>  angularjs.module(&lsquo;myApp&rsquo;)</p>
+
+<pre><code>.constant('Contacts', ['Foo', 'Bar'])
+</code></pre>
+
+<p>```</p>
+
+<h3>3. Create directories to save different kind of files</h3>
+
+<p>```
+  &ndash; app.js.coffee
+  controllers/</p>
+
+<pre><code>OneCtrl.js.coffee
+TwoCtrl.js.coffee
+</code></pre>
+
+<p>  constants/</p>
+
+<pre><code>Contants.js.coffee
+Contacts.js.coffee
+</code></pre>
+
+<p>```</p>
+
+<h3>4. Create features directories to store everything for each features</h3>
+
+<p>```
+  &ndash; app.js.coffee
+  Users</p>
+
+<pre><code>- UserCtrl.js.coffee
+- UserModel.js.coffee
+</code></pre>
+
+<p>  Contacts</p>
+
+<pre><code>- ContactsCtrl.js.coffee
+- ContactModel.js.coffee
+</code></pre>
+
+<p>```</p>
+
+<h3>5. How do organize code for multiple angularjs apps</h3>
+
+<p>```
+  &ndash; app.js.coffee
+  &ndash; modules</p>
+
+<pre><code>AppOne.js.coffee
+AppTwo.js.coffee
+</code></pre>
+
+<ul>
+<li>controllers
+AppOne/
+  OneCtrl.js.coffee
+AppTwo/
+  TwoCtrl.js.coffee</li>
+<li>models
+AppOne/
+  UserModel.js.coffee
+AppTwo/
+  ContactModel.js.coffee</li>
+</ul>
+
+
+<p>```</p>
+
+<p>In app.js.coffee, I define top level module to include basic dependencies share between apps.</p>
+
+<p><code>coffeescript app.js.coffee
+  angularjs.module('app', ['dep1', 'dep2'])
+</code></p>
+
+<p>In AppOne.js.coffe, it define a new module and load app as dependencies and the shared dependencies define in app will be available in AppOne.</p>
+
+<p><code>coffeescript AppOne.js.coffee
+  angularjs.module('app.appOne', ['app'])
+</code></p>
+
+<p>In html only need to specify AppOne in place that app one is need.</p>
+
+<p>``` html
+  <div ng-app='app.appOne'></p>
+
+<pre><code>&lt;div ng-controller="OneCtrl"&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>  </div>
+```</p>
+
+<h3>Conculsion</h3>
+
+<p>I didn&rsquo;t choose solution 4 because it seems not good to put different stuff together even though it&rsquo;s easier to find files for changes. So I follow solution 3 and extend it for multiple apps.</p>
+]]></content>
+  </entry>
+  
+</feed>
