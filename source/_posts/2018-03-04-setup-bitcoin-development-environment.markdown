@@ -12,7 +12,7 @@ Bitcoin or blockchain is crazy hot on internet today, and I'm curious what's the
 
 First of all, you need to get a server or in your local environment. I'm running with latest ubuntu on a VPS server.
 
-### Install docker-ce in ubuntu
+### Install docker-ce in ubuntu.
 
 I'm using docker-ce here. To install docker-ce in ubuntu, you can follow the steps:
 
